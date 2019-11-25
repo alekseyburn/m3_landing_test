@@ -1,0 +1,7 @@
+.features__title {
+  color: $dark-blue;
+}
+
+.features__list {
+  @include reset-list();
+}

@@ -1,0 +1,14 @@
+.specialists {
+  background-color: $light-gray;
+}
+
+.specialists__img {
+  display: block;
+  width: 976px;
+  height: 640px;
+}
+
+.specialists__list {
+  @include reset-list();
+}
+

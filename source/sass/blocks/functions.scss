@@ -1,0 +1,7 @@
+.functions {
+  background-color: $light-gray;
+}
+
+.functions__list {
+  @include reset-list();
+}

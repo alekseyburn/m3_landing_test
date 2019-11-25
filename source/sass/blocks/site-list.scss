@@ -1,0 +1,33 @@
+.site-list {
+  @include reset-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 490px;
+}
+
+.site-list__link {
+  &--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+
+      width: 4px;
+      height: 4px;
+
+      background-color: $white;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.site-list__link {
+  font-weight: 700;
+  color: $white;
+}

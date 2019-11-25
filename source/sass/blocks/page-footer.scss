@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $blue;
+}
+
+.page-footer__logo-image {
+  display: block;
+  width: 116px;
+  height: 17px;
+}
+
+.page-footer__phone {
+  color: $white;
+}
+
+.page-footer__copyright {
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
+}
+
+.page-footer__link {
+  color: $pink;
+}
