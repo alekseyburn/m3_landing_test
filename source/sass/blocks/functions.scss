@@ -1,7 +1,69 @@
 .functions {
   background-color: $light-gray;
+  padding-top: 75px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -75px;
+    left: 0;
+
+    height: 75px;
+
+    background-image: url("../img/bg-figure-bezier-reverse.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.functions__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 75px;
 }
 
 .functions__list {
   @include reset-list();
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.functions__item {
+  width: 360px;
+  text-align: center;
+position: relative;
+  margin-bottom: 100px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba($blue-dot, 0.25);
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+  }
+}
+
+.functions__svg {
+  display: block;
+  fill: $blue-dot;
+  margin: 0 auto 40px;
+}
+
+.functions__text {
+  margin: 0 auto;
+  width: 240px;
+  text-align: center;
 }

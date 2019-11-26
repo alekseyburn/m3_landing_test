@@ -29,15 +29,18 @@
     content: "";
     position: absolute;
     right: -40%;
-    bottom: -20%;
+    bottom: -39%;
 
     width: 489px;
-    height: 359px;
+    height: 485px;
+    z-index: 1;
 
     background-image: url("../img/bg-pulse@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-pulse@@2x.jpg");
+      background-image: url("../img/bg-pulse@2x.png");
     }
   }
 }
