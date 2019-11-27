@@ -21,7 +21,7 @@
     background-position: 100% 110%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-about-lines@2x.jpg");
+      background-image: url("../img/bg-about-lines@2x.png");
     }
   }
 
@@ -30,10 +30,10 @@
     position: absolute;
     right: -40%;
     bottom: -39%;
+    z-index: 1;
 
     width: 489px;
     height: 485px;
-    z-index: 1;
 
     background-image: url("../img/bg-pulse@1x.png");
     background-repeat: no-repeat;

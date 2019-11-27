@@ -5,10 +5,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 490px;
+
+  &--footer {
+    width: 585px;
+  }
 }
 
 .site-list__link {
-  &--active {
+  font-weight: 700;
+  color: $white;
+
+  &:hover,
+  &:focus {
     position: relative;
 
     &::before {
@@ -25,9 +33,4 @@
       transform: translateX(-50%);
     }
   }
-}
-
-.site-list__link {
-  font-weight: 700;
-  color: $white;
 }

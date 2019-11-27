@@ -125,22 +125,24 @@
     <section class="features section">
       <h2 class="features__title section__title">Ведите персональный дневник мониторинга здоровья</h2>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--storage">
           <h3 class="features__subtitle">Хранение данных</h3>
           <p class="features__text">Контролируйте и следите за динамикой изменения показателей вашего здоровья. Вносите
             результаты измерений медицинских показателей вручную или с помощью интегрированных приборов, храните историю
             измерений и отслеживайте динамику состояния здоровья</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--message">
           <h3 class="features__subtitle">Сообшение информации врачу</h3>
-          <p class="features__text">Позвольте специалисту дистанционно следить за вашим здоровьем. Будьте на связи со
+          <p class="features__text">Позвольте специалисту дистанционно следить за вашим здоровьем. Будьте&nbsp;на связи
+            со
             специалистом - отправляйте информацию о своем самочувствии, обменивайтесь сообщениями и получайте
-            рекомендации по вашему здоровью и лечению.</p>
+            рекомендации&nbsp;по&nbsp;вашему здоровью и лечению.</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--notification">
           <h3 class="features__subtitle">Напоминание о важном</h3>
-          <p class="features__text">Получайте рекомендации, созданные специально для вас. Система, персонально
-            настроенная под ваши требования, автоматически напомнит о необходимости выполнить рекомендации медицинского
+          <p class="features__text">Получайте рекомендации, созданные специально для вас. Система,&nbsp;персонально
+            настроенная под ваши требования, автоматически&nbsp;напомнит о необходимости выполнить рекомендации
+            медицинского
             специалиста: принять препарат или выполнить измерения.</p>
         </li>
       </ul>
@@ -148,20 +150,25 @@
     <section class="specialists section">
       <img class="specialists__img" src="../img/img-stats@1x.png" srcset="../img/img-stats@2x.png 2x"
            alt="Инструменты статистики для специалистов">
-      <h2 class="specialists__title section__title">Специалистам</h2>
-      <ul class="specialists__list">
-        <li class="specialists__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
-        <li class="specialists__item">Наблюдение за динамикой изменения основных медицинских показателей</li>
-        <li class="specialists__item">Наличие алгоритмов автоматического анализа поступающей информации</li>
-        <li class="specialists__item">Индивидуальная система уведомлений об изменении состояния каждого пациента</li>
-        <li class="specialists__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в
-          процесс профилактики, лечения и реабилитации.
-        </li>
-      </ul>
+      <div class="specialists__wrapper">
+        <h2 class="specialists__title section__title">Специалистам</h2>
+        <ul class="specialists__list">
+          <li class="specialists__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
+          <li class="specialists__item">Наблюдение за динамикой изменения основных медицинских&nbsp;показателей</li>
+          <li class="specialists__item">Наличие алгоритмов автоматического анализа поступающей&nbsp;информации</li>
+          <li class="specialists__item">Индивидуальная система уведомлений об изменении состояния&nbsp;каждого
+            пациента
+          </li>
+          <li class="specialists__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в
+            процесс профилактики, лечения и реабилитации.
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="access section">
       <h2 class="access__title section__title">Получите бесплатный доступ к «Дневнику здоровья»</h2>
-      <p class="access__text">Оставьте свою электронную почту и вы узнаете о запуске данного сервиса первым!</p>
+      <p class="access__text">Оставьте свою электронную почту и&nbsp;вы&nbsp;узнаете&nbsp;о&nbsp;запуске данного сервиса
+        первым!</p>
       <form class="access__form form" method="POST" action="https://echo.htmlacademy.ru">
         <label class="form__label">
           <input class="form__field"
@@ -175,27 +182,29 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="/">О сервисе</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="/">Функции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="/">Возможности</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="/">Специалистам</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="page-footer__phone" href="tel:88005004549" target="_blank" rel="noreferrer noopener">88005004549</a>
-    <p class="page-footer__copyright">Разработка сайта <a class="page-footer__link" href="/">Redsoft</a></p>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list site-list--footer">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Функции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Возможности</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Специалистам</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-footer__phone" href="tel:88005004549" target="_blank" rel="noreferrer noopener">88005004549</a>
+      <p class="page-footer__copyright">Разработка сайта <a class="page-footer__link" href="/">Redsoft</a></p>
+    </div>
   </footer>
 </body>
 </html>

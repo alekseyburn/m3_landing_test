@@ -1,9 +1,20 @@
 .button {
-  background-color: $pink;
-  color: $white;
-  border: none;
   display: inline-block;
-  vertical-align: middle;
   padding: 17px 33px;
+
+  vertical-align: middle;
+  color: $white;
+
+  background-color: $pink;
+  border: none;
   border-radius: 35px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-pink;
+    box-shadow: 0 6px 33px 7px rgba(231, 0, 103, 0.36);
+  }
 }

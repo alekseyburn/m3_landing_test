@@ -31,4 +31,11 @@
   border: 2px solid $light-blue;
   border-radius: 30px;
   cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $light-blue;
+  }
 }

@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+.form__field {
+  width: 360px;
+  padding: 17px;
+
+  font: inherit;
+  font-size: 14px;
+
+  background-color: $bg-access;
+  border: 1px solid $dark-blue;
+  border-radius: 30px;
+}
+
+.form__send-button {
+  padding: 17px 38px;
+
+  font: inherit;
+}

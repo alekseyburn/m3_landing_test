@@ -1,15 +1,17 @@
 .functions {
-  background-color: $light-gray;
-  padding-top: 75px;
-  padding-bottom: 70px;
   position: relative;
   z-index: 1;
+
+  padding-top: 75px;
+  padding-bottom: 70px;
+
+  background-color: $light-gray;
 
   &::before {
     content: "";
     position: absolute;
-    right: 0;
     top: -75px;
+    right: 0;
     left: 0;
 
     height: 75px;
@@ -20,50 +22,56 @@
 }
 
 .functions__title {
+  margin: 0 0 75px;
+
   text-align: center;
-  margin: 0;
-  margin-bottom: 75px;
 }
 
 .functions__list {
   @include reset-list();
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 1200px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .functions__item {
+  position: relative;
+
   width: 360px;
-  text-align: center;
-position: relative;
   margin-bottom: 100px;
+
+  text-align: center;
 
   &::before {
     content: "";
-    display: block;
     position: absolute;
+    top: -20%;
+    left: 50%;
+
+    display: block;
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+
     border: 1px solid rgba($blue-dot, 0.25);
-    left: 50%;
-    top: -20%;
+    border-radius: 50%;
     transform: translateX(-50%);
   }
 }
 
 .functions__svg {
   display: block;
-  fill: $blue-dot;
   margin: 0 auto 40px;
+
+  fill: $blue-dot;
 }
 
 .functions__text {
-  margin: 0 auto;
   width: 240px;
+  margin: 0 auto;
+
   text-align: center;
 }

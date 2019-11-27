@@ -1,14 +1,51 @@
 .specialists {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 90px;
+
   background-color: $light-gray;
 }
 
 .specialists__img {
+  position: relative;
+  z-index: 2;
+
   display: block;
-  width: 976px;
+  width: 896px;
   height: 640px;
+  margin-top: -170px;
+}
+
+.specialists__wrapper {
+  margin-left: 30px;
+}
+.specialists__title {
+  margin: 0 0 27px;
 }
 
 .specialists__list {
   @include reset-list();
+
+  width: 600px;
 }
 
+.specialists__item {
+  position: relative;
+
+  margin-bottom: 16px;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: $blue-dot;
+    border-radius: 50%;
+  }
+}
