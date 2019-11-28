@@ -26,6 +26,7 @@ body {
   line-height: 24px;
   font-family: $font;
   color: $main-text;
+  overflow-x: hidden;
 }
 
 main {
