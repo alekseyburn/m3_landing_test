@@ -57,7 +57,7 @@ gulp.task('css', () => {
     ]))
     .pipe(purgecss({
       content: ['build/**/*.html'],
-      whitelist: ['active', 'slide-js', 'visible', 'non-visible', 'slideInLeft', 'slideInRight', 'slideOutLeft', 'slideOutRight', 'slick-active', 'valid', 'invalid', 'success'],
+      whitelist: ['active', 'slide-js', 'visible', 'non-visible', 'slideInLeft', 'slideInRight', 'slideOutLeft', 'slideOutRight','slick-dots', 'slick-active', 'valid', 'invalid', 'success'],
     }))
     .pipe(gulp.dest('build/css'))
     .pipe(cssnano())
