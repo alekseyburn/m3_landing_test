@@ -57,7 +57,7 @@ gulp.task('css', () => {
     ]))
     .pipe(purgecss({
       content: ['build/**/*.html'],
-      whitelist: ['active', 'slide-js', 'visible', 'non-visible', 'slideInLeft', 'slideInRight', 'slideOutLeft', 'slideOutRight', 'slick-active'],
+      whitelist: ['active', 'slide-js', 'visible', 'non-visible', 'slideInLeft', 'slideInRight', 'slideOutLeft', 'slideOutRight', 'slick-active', 'valid', 'invalid', 'success'],
     }))
     .pipe(gulp.dest('build/css'))
     .pipe(cssnano())
@@ -171,6 +171,6 @@ gulp.task('deploy', (cb) => {
   ghPages.publish('build', cb);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'webp', 'images', 'sprite', 'js'));
+gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'webp', 'images', 'sprite', 'js', 'critical'));
 gulp.task('start', gulp.series('build', 'server'));
 gulp.task('remote', gulp.series('build', 'deploy'));
