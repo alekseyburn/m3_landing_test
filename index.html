@@ -8,16 +8,25 @@
   <title>Моё Здоровье</title>
   <link rel="preload" href="fonts/CeraRoundPro-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/CeraRoundPro-Medium.woff2" as="font" crossorigin="anonymous">
+  <style>
+    *,:after,:before{box-sizing:inherit}html{box-sizing:border-box}a{text-decoration:none}img{width:100%;height:auto}body{min-width:1200px;margin:0 auto;overflow-x:hidden;font-weight:400;font-size:16px;line-height:24px;font-family:Cera Round,Arial,sans-serif;color:#60759d}main{overflow:hidden}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;white-space:nowrap;border:0;-webkit-clip-path:inset(100%);clip-path:inset(100%)}.button{display:inline-block;padding:17px 33px;vertical-align:middle;color:#fff;background-color:#e70067;border:none;border-radius:35px}.page-header{position:absolute;left:50%;z-index:2;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:baseline;align-items:baseline;width:1200px;padding:18px 20px 0;transform:translateX(-50%)}.page-header__logo{-ms-flex-item-align:center;align-self:center}.page-header__logo-image{display:block;width:200px;height:40px}.page-header__link{padding:14px 33px 18px;font-weight:700;color:#fff;border:2px solid #5489c3;border-radius:30px}.main-nav{margin-left:130px}.site-list{margin:0;padding:0;list-style:none;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:justify;justify-content:space-between;width:490px}.site-list__link{font-weight:700;color:#fff}.presentation{position:relative;z-index:1}.presentation:before{content:"";position:absolute;right:0;bottom:-1px;left:0;z-index:2;height:75px;background-image:url(img/bg-figure-bezier.svg);background-repeat:no-repeat;background-position:bottom}.presentation__list{margin:0;padding:0;list-style:none}.presentation__item{background-repeat:no-repeat;background-position:50%;background-size:cover}.presentation__item--first{background-image:url(img/bg-slide1@1x.jpg)}@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx),(min-resolution:144dpi){.presentation__item--first{background-image:url(img/bg-slide1@2x.jpg)}}.presentation__item--second{background-image:url(img/bg-slide2@1x.jpg)}@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx),(min-resolution:144dpi){.presentation__item--second{background-image:url(img/bg-slide2@2x.jpg)}}.presentation__wrapper{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;width:760px;height:750px;margin:auto;text-align:center}.presentation__title{max-width:100%;margin:-30px 0 35px;font-weight:500;color:#fff}.presentation__text{max-width:100%;margin:0 0 50px;font-size:24px;line-height:36px;color:#fff}.form__requirements{margin:0;padding:0;list-style:none;position:absolute;top:80px;left:17px;font-size:14px;line-height:18px;text-align:left;color:#31496b}.non-visible{display:none}.section__title{font-size:36px;line-height:54px}
+  </style>
   <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"></noscript>
+  <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+  <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
 
   <script src="js/script.min.js" defer></script>
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
+      <picture>
+        <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+        <img class="page-header__logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Моё Здоровье">
+      </picture>
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -62,8 +71,11 @@
       </ul>
     </section>
     <section class="about section">
-      <img class="about__img" src="../img/img-phone@1x.png" srcset="../img/img-phone@2x.png 2x"
-           alt="Приложение 'Дневник здоровья'">
+      <picture>
+        <source type="image/webp" srcset="img/img-phone@1x.webp 1x, img/img-phone@2x.webp 2x">
+        <img class="about__img" src="img/img-phone@1x.png" srcset="img/img-phone@2x.png 2x" alt="Приложение 'Дневник здоровья'">
+      </picture>
+
       <div class="about__wrapper">
         <h2 class="about__title section__title">Что такое «Дневник здоровья»?</h2>
         <h3 class="about__subtitle">Дневник пациента — это удобный онлайн-сервис:</h3>
@@ -145,8 +157,10 @@
       </ul>
     </section>
     <section class="specialists section">
-      <img class="specialists__img" src="../img/img-stats@1x.png" srcset="../img/img-stats@2x.png 2x"
-           alt="Инструменты статистики для специалистов">
+      <picture>
+        <source type="image/webp" srcset="img/img-stats@1x.webp 1x, img/img-stats@2x.webp 2x">
+        <img class="specialists__img" src="img/img-stats@1x.png" srcset="img/img-stats@2x.png 2x" alt="Инструменты статистики для специалистов">
+      </picture>
       <div class="specialists__wrapper">
         <h2 class="specialists__title section__title">Специалистам</h2>
         <ul class="specialists__list">
@@ -168,11 +182,7 @@
         первым!</p>
       <form class="access__form form" method="POST" action="https://echo.htmlacademy.ru">
         <label class="form__label">
-          <input class="form__field"
-                 type="email"
-                 name="mail"
-                 placeholder="Ваш E-mail"
-                 required>
+          <input class="form__field" type="email" name="mail" placeholder="Ваш E-mail" required>
         </label>
         <ul class="form__requirements non-visible">
           <li>Необходим символ '@'</li>
@@ -188,7 +198,10 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
+        <picture>
+          <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+          <img class="page-footer__logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Моё Здоровье">
+        </picture>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list site-list site-list--footer">
