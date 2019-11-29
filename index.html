@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="Description" content="Программа доступного лечения">
+  <title>Моё Здоровье</title>
+  <link rel="preload" href="fonts/CeraRoundPro-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CeraRoundPro-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="js/script.min.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="/">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="/">Функции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="/">Возможности</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="/">Партнеры</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__link" href="send.html">Оставить заявку</a>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Сервис для самоконтроля показателей состояния здоровья</h1>
+    <section class="presentation section">
+      <ul class="presentation__list slider">
+        <li class="presentation__item presentation__item--first">
+          <div class="presentation__wrapper">
+            <h2 class="presentation__title section__title">Расширяем возможности предоставления качественных медицинских
+              услуг</h2>
+            <p class="presentation__text">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния
+              здоровья, разработанный для участников программы «Мое здоровье».</p>
+            <a class="presentation__link button" href="/">Узнать больше</a>
+          </div>
+        </li>
+        <li class="presentation__item presentation__item--second">
+          <div class="presentation__wrapper">
+            <h2 class="presentation__title section__title">Следить за здоровьем станет проще</h2>
+            <p class="presentation__text">Скоро вы сможете находиться на связи со своим лечащим врачом независимо от
+              своего местоположения, вести дневник мониторинга самочувствия, получать рекомендации по плану лечения и
+              многое другое.</p>
+            <a class="presentation__link button" href="/">Узнать больше</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="about section">
+      <img class="about__img" src="../img/img-phone@1x.png" srcset="../img/img-phone@2x.png 2x"
+           alt="Приложение 'Дневник здоровья'">
+      <div class="about__wrapper">
+        <h2 class="about__title section__title">Что такое «Дневник здоровья»?</h2>
+        <h3 class="about__subtitle">Дневник пациента — это удобный онлайн-сервис:</h3>
+        <ul class="about__list">
+          <li class="about__item">Вносите результаты измерений вручную или с помощью интегрированных приборов</li>
+          <li class="about__item">Ведите персональную медицинскую карту с историей ваших&nbsp;измерений</li>
+          <li class="about__item">Делитесь результатами измерений со специалистами для&nbsp;повышения эффективности
+            лечения
+          </li>
+          <li class="about__item">Получайте рекомендации, созданные специально для вас</li>
+        </ul>
+        <a class="about__link button" href="/">Оставить заявку</a>
+      </div>
+    </section>
+    <section class="functions section">
+      <h2 class="functions__title section__title">Функции приложения</h2>
+      <ul class="functions__list">
+        <li class="functions__item">
+          <svg class="functions__svg" width="32" height="32">
+            <use xlink:href="img/sprite.svg#icon-tablets"></use>
+          </svg>
+          <p class="functions__text">Планирование графика приема лекарств</p>
+        </li>
+        <li class="functions__item">
+          <svg class="functions__svg" width="35" height="32">
+            <use xlink:href="img/sprite.svg#icon-siren"></use>
+          </svg>
+          <p class="functions__text">Уведомление врача об&nbsp;исполнении назначений</p>
+        </li>
+        <li class="functions__item">
+          <svg class="functions__svg" width="36" height="32">
+            <use xlink:href="img/sprite.svg#icon-heart"></use>
+          </svg>
+          <p class="functions__text">Ведение дневника самочувствия</p>
+        </li>
+        <li class="functions__item">
+          <svg class="functions__svg" width="23" height="32">
+            <use xlink:href="img/sprite.svg#icon-smartwatch"></use>
+          </svg>
+          <p class="functions__text">Удаленное предоставление измерений врачу</p>
+        </li>
+        <li class="functions__item">
+          <svg class="functions__svg" width="32" height="32">
+            <use xlink:href="img/sprite.svg#icon-conversation"></use>
+          </svg>
+          <p class="functions__text">Общение с врачами через&nbsp;встроенный&nbsp;мессенджер</p>
+        </li>
+        <li class="functions__item">
+          <svg class="functions__svg" width="32" height="32">
+            <use xlink:href="img/sprite.svg#icon-notifications"></use>
+          </svg>
+          <p class="functions__text">Получение уведомлений для&nbsp;выполнения назначений</p>
+        </li>
+      </ul>
+    </section>
+    <section class="features section">
+      <h2 class="features__title section__title">Ведите персональный дневник мониторинга здоровья</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--storage">
+          <h3 class="features__subtitle">Хранение данных</h3>
+          <p class="features__text">Контролируйте и следите за динамикой изменения показателей вашего здоровья. Вносите
+            результаты измерений медицинских показателей вручную или с помощью интегрированных приборов, храните историю
+            измерений и отслеживайте динамику состояния здоровья</p>
+        </li>
+        <li class="features__item features__item--message">
+          <h3 class="features__subtitle">Сообшение информации врачу</h3>
+          <p class="features__text">Позвольте специалисту дистанционно следить за вашим здоровьем. Будьте&nbsp;на связи
+            со
+            специалистом - отправляйте информацию о своем самочувствии, обменивайтесь сообщениями и получайте
+            рекомендации&nbsp;по&nbsp;вашему здоровью и лечению.</p>
+        </li>
+        <li class="features__item features__item--notification">
+          <h3 class="features__subtitle">Напоминание о важном</h3>
+          <p class="features__text">Получайте рекомендации, созданные специально для вас. Система,&nbsp;персонально
+            настроенная под ваши требования, автоматически&nbsp;напомнит о необходимости выполнить рекомендации
+            медицинского
+            специалиста: принять препарат или выполнить измерения.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="specialists section">
+      <img class="specialists__img" src="../img/img-stats@1x.png" srcset="../img/img-stats@2x.png 2x"
+           alt="Инструменты статистики для специалистов">
+      <div class="specialists__wrapper">
+        <h2 class="specialists__title section__title">Специалистам</h2>
+        <ul class="specialists__list">
+          <li class="specialists__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
+          <li class="specialists__item">Наблюдение за динамикой изменения основных медицинских&nbsp;показателей</li>
+          <li class="specialists__item">Наличие алгоритмов автоматического анализа поступающей&nbsp;информации</li>
+          <li class="specialists__item">Индивидуальная система уведомлений об изменении состояния&nbsp;каждого
+            пациента
+          </li>
+          <li class="specialists__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в
+            процесс профилактики, лечения и реабилитации.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="access section">
+      <h2 class="access__title section__title">Получите бесплатный доступ к «Дневнику здоровья»</h2>
+      <p class="access__text">Оставьте свою электронную почту и&nbsp;вы&nbsp;узнаете&nbsp;о&nbsp;запуске данного сервиса
+        первым!</p>
+      <form class="access__form form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="form__label">
+          <input class="form__field"
+                 type="email"
+                 name="mail"
+                 placeholder="Ваш E-mail"
+                 required>
+        </label>
+        <ul class="form__requirements non-visible">
+          <li>Необходим символ '@'</li>
+          <li>Часть адреса перед '@'</li>
+          <li>Часть адреса после '@'</li>
+          <li>Наличие '.' перед доменом</li>
+          <li>Наличие домена после '.'</li>
+        </ul>
+        <button class="form__send-button button" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Моё Здоровье">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list site-list--footer">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Функции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Возможности</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--footer" href="/">Специалистам</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-footer__phone" href="tel:88005004549" target="_blank" rel="noreferrer noopener">88005004549</a>
+      <p class="page-footer__copyright">Разработка сайта <a class="page-footer__link" href="/">Redsoft</a></p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+      $('.slider').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        fadeSpeed: 2000
+      });
+  </script>
+</body>
+</html>
