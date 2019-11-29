@@ -1,0 +1,28 @@
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 160px;
+
+  background-color: $bg-access;
+}
+
+.access__title {
+  margin: 0 0 35px;
+
+  text-align: center;
+}
+
+.access__text {
+  width: 640px;
+  margin: 0 auto 57px;
+
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.access__form {
+  width: 560px;
+}

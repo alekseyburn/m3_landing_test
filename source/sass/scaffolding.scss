@@ -18,12 +18,17 @@ img {
 }
 
 body {
-  min-width: $mobile-width;
+  min-width: 1200px;
   margin: 0 auto;
 
   font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: $font;
   color: $main-text;
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
 }

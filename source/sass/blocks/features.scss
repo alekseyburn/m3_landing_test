@@ -1,0 +1,119 @@
+.features {
+  position: relative;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 150px 20px 125px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 295px;
+    right: -110px;
+    z-index: 2;
+
+    display: block;
+    width: 611px;
+    height: 608px;
+
+    background-image: url("../img/bg-phones@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-phones@2x.png");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -32%;
+    z-index: 1;
+
+    display: block;
+    width: 1920px;
+    height: 960px;
+
+    background-image: url("../img/bg-features-lines@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-features-lines@2x.png");
+    }
+  }
+}
+
+.features__title {
+  margin: 0 0 90px;
+
+  text-align: center;
+  color: $dark-blue;
+}
+
+.features__list {
+  @include reset-list();
+
+  width: 575px;
+  margin-left: 40px;
+}
+
+.features__item {
+  position: relative;
+
+  margin-bottom: 78px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -62px;
+
+    font-size: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -110px;
+
+    display: block;
+    width: 123px;
+    height: 123px;
+
+    border: 1px solid rgba($blue-dot, 0.25);
+    border-right: 1px solid transparent;
+    border-radius: 50%;
+  }
+
+  &--storage {
+    &::before {
+      content: "1";
+    }
+  }
+
+  &--message {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--notification {
+    &::before {
+      content: "3";
+    }
+  }
+}
+
+
+.features__subtitle {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.features__text {
+  margin: 0;
+}
